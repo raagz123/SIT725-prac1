@@ -14,7 +14,7 @@ class Biosensor{
     generateHeartBeat(){
         let HeartBeat = this.generateRandomBetween(60,70);
         this.heartRate=HeartBeat;
-        console.log('[Owner]:' +this.owner+'------[HR]:'+this.heartRate);
+        console.log('Name:' +this.owner+'------HR:'+this.heartRate);
     }
     live(){
         setInterval(()=>{this.generateHeartBeat()},1000);
